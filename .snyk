@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - '@bazel/karma > karma > dom-serialize > extend':
+        patched: '2019-07-18T07:51:56.904Z'
+    - karma-browserstack-launcher > browserstacktunnel-wrapper > https-proxy-agent > agent-base > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+    - karma-browserstack-launcher > browserstack > https-proxy-agent > agent-base > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+    - protractor > webdriver-manager > request > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+    - karma > dom-serialize > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+    - karma-browserstack-launcher > browserstacktunnel-wrapper > https-proxy-agent > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+    - karma-browserstack-launcher > browserstack > https-proxy-agent > extend:
+        patched: '2019-07-18T07:51:56.904Z'
+  SNYK-JS-LODASH-450202:
+    - karma > lodash:
+        patched: '2019-07-18T07:51:56.904Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > async > lodash':
+        patched: '2019-07-18T07:51:56.904Z'
+    - '@bazel/karma > karma > lodash':
+        patched: '2019-07-18T07:51:56.904Z'
+    - '@microsoft/api-extractor > lodash':
+        patched: '2019-07-18T07:51:56.904Z'
