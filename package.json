@@ -26,7 +26,9 @@
     "test-ivy-aot": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot,-fixme-ivy-aot --test_tag_filters=-no-ivy-aot,-fixme-ivy-aot",
     "test-fixme-ivy-aot": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot --test_tag_filters=-no-ivy-aot",
     "list-fixme-ivy-targets": "bazel query --output=label 'attr(\"tags\", \"\\[.*fixme-ivy.*\\]\", //...) except kind(\"sh_binary\", //...) except kind(\"devmode_js_sources\", //...)' | sort",
-    "bazel": "bazel"
+    "bazel": "bazel",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
@@ -111,7 +113,8 @@
     "typescript": "~3.5.3",
     "xhr2": "0.1.4",
     "yargs": "13.1.0",
-    "zone.js": "^0.9.1"
+    "zone.js": "^0.9.1",
+    "snyk": "^1.205.0"
   },
   "optionalDependencies": {
     "fsevents": "2.0.1"
@@ -165,5 +168,6 @@
   "// 4": "natives is needed for gulp to work with node >= 10.13, see #28213",
   "resolutions": {
     "natives": "1.1.6"
-  }
+  },
+  "snyk": true
 }
