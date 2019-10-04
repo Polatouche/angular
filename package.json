@@ -30,7 +30,9 @@
     "bazel": "bazel",
     "//circleci-win-comment": "See the test-win circleci job for why these are needed. If they are not needed anymore, remove them.",
     "circleci-win-ve": "bazel test --build_tag_filters=-ivy-only --test_tag_filters=-ivy-only,-browser:chromium-local //packages/compiler-cli/...",
-    "circleci-win-ivy": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot,-fixme-ivy-aot --test_tag_filters=-no-ivy-aot,-fixme-ivy-aot,-browser:chromium-local //packages/compiler-cli/..."
+    "circleci-win-ivy": "bazel test --define=compile=aot --build_tag_filters=-no-ivy-aot,-fixme-ivy-aot --test_tag_filters=-no-ivy-aot,-fixme-ivy-aot,-browser:chromium-local //packages/compiler-cli/...",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
@@ -115,7 +117,8 @@
     "typescript": "~3.5.3",
     "xhr2": "0.1.4",
     "yargs": "13.1.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "snyk": "^1.230.5"
   },
   "optionalDependencies": {
     "fsevents": "2.0.1"
@@ -169,5 +172,6 @@
   "// 4": "natives is needed for gulp to work with node >= 10.13, see #28213",
   "resolutions": {
     "natives": "1.1.6"
-  }
+  },
+  "snyk": true
 }
