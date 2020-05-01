@@ -28,7 +28,8 @@
   "dependencies": {
     "@microsoft/api-extractor": "^7.3.9",
     "shelljs": "0.8.2",
-    "tsickle": "^0.38.0"
+    "tsickle": "^0.38.0",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@angular/compiler-cli": "0.0.0-PLACEHOLDER",
@@ -58,7 +59,12 @@
   "ng-update": {
     "packageGroup": "NG_UPDATE_PACKAGE_GROUP"
   },
-  "publishConfig":{
-    "registry":"https://wombat-dressing-room.appspot.com"
-  }
+  "publishConfig": {
+    "registry": "https://wombat-dressing-room.appspot.com"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
