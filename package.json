@@ -36,7 +36,9 @@
     "ts-circular-deps": "ts-node --transpile-only -- dev-infra/ts-circular-dependencies/index.ts --config ./packages/circular-deps-test.conf.js",
     "ts-circular-deps:check": "yarn -s ts-circular-deps check",
     "ts-circular-deps:approve": "yarn -s ts-circular-deps approve",
-    "ng-dev": "ts-node --transpile-only -- dev-infra/cli.ts"
+    "ng-dev": "ts-node --transpile-only -- dev-infra/cli.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
@@ -143,7 +145,8 @@
     "typescript": "~3.8.3",
     "xhr2": "0.2.0",
     "yaml": "^1.7.2",
-    "yargs": "15.3.0"
+    "yargs": "15.3.0",
+    "snyk": "^1.319.2"
   },
   "// 2": "devDependencies are not used under Bazel. Many can be removed after test.sh is deleted.",
   "devDependencies": {
@@ -202,5 +205,6 @@
     "hooks": {
       "commit-msg": "yarn -s ng-dev commit-message pre-commit-validate --file-env-variable HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "snyk": true
 }
