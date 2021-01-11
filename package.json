@@ -41,7 +41,7 @@
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
     "@angular-devkit/architect": "0.1100.0-rc.1",
-    "@angular-devkit/build-angular": "0.1100.0-rc.1",
+    "@angular-devkit/build-angular": "0.1100.0",
     "@angular-devkit/build-optimizer": "0.1100.0-rc.1",
     "@angular-devkit/core": "11.0.0-rc.1",
     "@angular-devkit/schematics": "11.0.0-rc.1",
@@ -119,7 +119,7 @@
     "jasmine-core": "^3.5.0",
     "jquery": "3.0.0",
     "js-levenshtein": "^1.1.6",
-    "karma": "~4.4.0",
+    "karma": "~5.0.8",
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.2.0",
     "karma-jasmine": "^2.0.1",
