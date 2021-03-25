@@ -53,7 +53,7 @@
     "@babel/traverse": "^7.8.6",
     "@babel/types": "^7.8.6",
     "@bazel/concatjs": "3.0.0",
-    "@bazel/jasmine": "3.2.1",
+    "@bazel/jasmine": "3.2.3",
     "@bazel/protractor": "3.2.1",
     "@bazel/rollup": "3.2.1",
     "@bazel/terser": "3.2.1",
