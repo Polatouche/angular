@@ -45,7 +45,7 @@
   },
   "// 1": "dependencies are used locally and by bazel",
   "dependencies": {
-    "@angular-devkit/build-angular": "16.0.0-rc.4",
+    "@angular-devkit/build-angular": "16.1.0",
     "@angular-devkit/core": "16.0.0-rc.4",
     "@angular-devkit/schematics": "16.0.0-rc.4",
     "@angular/cdk": "16.0.0-rc.2",
@@ -55,7 +55,7 @@
     "@babel/core": "7.21.8",
     "@babel/generator": "7.21.5",
     "@babel/parser": "7.21.8",
-    "@babel/preset-env": "7.21.5",
+    "@babel/preset-env": "7.22.0",
     "@babel/template": "7.20.7",
     "@babel/traverse": "7.21.5",
     "@babel/types": "7.21.5",
