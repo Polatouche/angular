@@ -59,7 +59,7 @@
     "@angular/benchpress": "workspace: *",
     "@angular/build": "21.0.0-rc.5",
     "@angular/cdk": "21.0.0-rc.3",
-    "@angular/cli": "21.0.0-rc.5",
+    "@angular/cli": "21.0.2",
     "@angular/common": "workspace:*",
     "@angular/compiler": "workspace:*",
     "@angular/compiler-cli": "workspace:*",
