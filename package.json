@@ -80,7 +80,7 @@
     "@babel/core": "7.28.5",
     "@babel/generator": "7.28.5",
     "@jridgewell/sourcemap-codec": "^1.4.14",
-    "@microsoft/api-extractor": "^7.24.2",
+    "@microsoft/api-extractor": "^7.36.3",
     "@rollup/plugin-babel": "^6.0.0",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
